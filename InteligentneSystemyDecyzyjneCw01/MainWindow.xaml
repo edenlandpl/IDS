@@ -1,0 +1,61 @@
+﻿<Window x:Class="InteligentneSystemyDecyzyjneCw01.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:InteligentneSystemyDecyzyjneCw01"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="610" Width="950">
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="180"/>
+            <RowDefinition Height="260"/>
+            <RowDefinition Height="260"/>
+            <RowDefinition Height="260"/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" Grid.Row="0">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="180"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>                    
+                    <Label Content="Zapytanie - tutaj 'bazy danych'" HorizontalAlignment="Left" Grid.Column="0" Grid.Row="0"/>
+                    <Label Content="Ranking dokumentów" Grid.Column="0" Grid.Row="1"/>
+                </Grid>
+                <DataGrid
+            HorizontalAlignment="Left"
+            Margin="20,30,0,0"
+            VerticalAlignment="Top"
+            Loaded="RankingDokumentowList_Loaded" Grid.Column="1" Grid.Row="0"/>
+            </Grid>          
+            
+        </StackPanel>
+        
+        <Label Content="TDM" Grid.Row="1"/>
+        <DataGrid
+            HorizontalAlignment="Left"
+            Margin="20,30,0,0"
+            VerticalAlignment="Top"
+            Loaded="DataGrid_Loaded" Grid.Row="1"/>
+        <Label Content="TF TDM" Grid.Row="2"/>
+        <DataGrid
+            HorizontalAlignment="Left"
+            Margin="20,30,0,0"
+            VerticalAlignment="Top"
+            Loaded="DataGridTFTDM_Loaded" Grid.Row="2"/>
+        <Label Content="TF TDM" Grid.Row="3"/>
+        <DataGrid
+            HorizontalAlignment="Left"
+            Margin="20,30,0,0"
+            VerticalAlignment="Top"
+            Loaded="DataGridTFIDFTDM_Loaded" Grid.Row="3"/>
+    </Grid>
+    </ScrollViewer>
+</Window>
