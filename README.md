@@ -17,7 +17,7 @@ TFIDF TDM - Term Frequency Inverse Freqquency, Term Document Matrix (where IDF m
 
 ***Zrzut ekranu***
 
-![Grafika](https://tinypic.pl/076mssn4el9d)
+![Grafika](https://files.tinypic.pl/i/00991/076mssn4el9d.png)
 
 
 - **[MIT license](http://opensource.org/licenses/mit-license.php)**
